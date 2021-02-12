@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goals</title>
+        <link rel="stylesheet" type="text/css" href="styles/nav.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/form.css"/>
+        <meta content="width=device-width,intitial-scale=1.0" name="viewport">
+    </head>
+    <body>
+        <div class="containerNav">
+            <h1 id="company">Achieve it</h1>
+            <a href="goals.html">All Goals</a>
+        </div>
+    	<div class="container">
+    		<div class="goal">
+    			<div class="form_header">Enter Goal:</div>
+    			<form action="../FirstApi/index.php" method="post">
+    				<input type="hidden" id="Id" name="action" value="insert"/>
+    				<input type="text" class="txt" id="Description" name="Description" placeholder="Goal description" required/><br>
+    				<input type="radio" class="chk" name="Completed" value="1" checked/><span class="rem">Done</span>
+    				<input type="radio" class="chk" name="Completed" value="0"/><span class="rem">Not Done</span><br>
+    				<input type="submit" class="btn" value="Submit"/>
+    			</form>
+    		</div>
+    	</div>
+</body>
+</html>

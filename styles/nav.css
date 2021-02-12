@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.containerNav{
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 5px 15px 15px #ddd;
+}
+
+#company{
+    font-size: 22px;
+    font-weight: 200;
+    padding: 0;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #aaa;
+}
+
+a:hover{
+    color: black;
+}
+
+.footer{
+    display: flex;
+    padding: 2em;
+    background-color: #000;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        padding: 1em .5em;
+    }
+}

@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em 5em;
+}
+
+.goal{
+    word-wrap: anywhere;
+    flex-grow: 1;
+    margin: 3px;
+    padding: 3px;
+    flex-basis: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.goal input{
+    margin: 3px 0;
+    width: 50%;
+    height: 2em;
+}
+
+.green{
+    background-color: #7befb2;
+}
+
+.red{
+    background-color: #f1828d;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #data{
+      flex-direction: column;
+      margin: 1em;
+  }
+  
+  .goal{
+      flex-basis: 100%;
+  }
+}
